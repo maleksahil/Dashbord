@@ -24,7 +24,6 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style2.css">
     <style>
         :root {
             --dark: #333;
@@ -189,7 +188,7 @@
                 <label for="search"><i class="fas fa-search"></i></label>
             </div>
 
-            <div><button id="box">log in</button></div>
+            <div><a href="login.html" ><button id="box">log in</button></a></div>
 
             <!-- <i class="fa-solid fa-bell fa-2xl"></i> -->
 
@@ -342,23 +341,7 @@
 
 
 
-    <div class="box">
-        <div class="main2">
-
-            <div class="close"><img src="cross-removebg-preview.png" alt="aa" height="100%" width="100%"> </i></div>
-            <h1 id="h1">My Login Page</h1>
-            <h3>Enter your login credentials</h3>
-            <form action="process_login.php" method="post">
-                <label for="username"><b>Username</b></label>
-                <input type="text" placeholder="Enter your username" name="username" required>
     
-                <label for="password"><b>Password</b></label>
-                <input type="password" placeholder="Enter your password" name="password" required>
-    
-                <button style="width: 85%; margin-top: 30px;" id="LoginButton" type="submit">Login</button>
-            </form>
-        </div>
-    </div>
 
 
 
@@ -651,10 +634,13 @@
     <script>
 
         $(document).ready(function () {
+
             $('.menu').click(function () {
                 $('.sidebar').toggle(1000)
-
+                $('.main').toggleClass('mainclass')
             })
+
+
         })
     </script>
 
